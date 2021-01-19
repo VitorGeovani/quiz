@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/quiz.css">
+    <title>Quiz</title>
+    <link rel="icon" href="./img/favicon.ico" type="image/gif" sizes="16x16">
+</head>
+<body>
+    <header>
+        <div class="titulo_inicial">
+            <span class="Titulo">Quiz - DC vs Marvel</span><br>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="carta">
+               <!--Pergunta 1-->
+               <h1>O cavaleiro das trevas</h1>
+               <img height="300px" width="300px" src="./img/batman3.1.jpg" alt=""><br><br>
+               <strong>
+                  <p>Este personagem é muito famoso e é conhecido por viver em uma mansão que possui uma caverna. Como ele é conhecido?</p>
+               </strong>
+               <input type="radio" id="Robin" name="quest" value="Robin">
+               <label for="Robin"><strong>Robin</strong></label><br>
+               <input type="radio" id="Coringa" name="quest" value="Coringa">
+               <label for="Coringa"><strong>Coringa</strong></label><br>
+               <input type="radio" id="Batman" name="quest" value="Batman">
+               <label for="Batman"><strong>Batman</strong></label><br><br>
+               <button class="btn" onclick="questao1()"><strong>Responder</strong></button><br><br>
+               <strong><span id="resultado1"></span></strong><br>
+               <span class="atualPontuacao"><strong>Pontuação Atual:</strong></span><br>  
+               <strong><span id="spanAtual">0/12</span></strong>
+               <br><br><br><br>
+            </div>
+
+            <div class="carta2">
+                <!--Pergunta 2-->
+                <h1>A casa dos Deuses</h1>
+                <img height="300px" width="300px" src="./img/Asgard2.jpg" alt=""><br><br>
+                <strong>
+                   <p>Este reino fica fora da Terra e faz parte do conjunto dos Nove Reinos, sendo o Reino Central e também a Casa de Thor. Como ele é conhecido?</p>
+                </strong>
+                <input type="radio" id="Jotunheim" name="quest" value="Jotunheim">
+                <label for="Jotunheim"><strong>Jotunheim</strong></label><br>
+                <input type="radio" id="Vanaheim" name="quest" value="Vanaheim">
+                <label for="Vanaheim"><strong>Vanaheim</strong></label><br>
+                <input type="radio" id="Asgard" name="quest" value="Asgard">
+                <label for="Batman"><strong>Asgard</strong></label><br><br>
+                <button class="btn" onclick="questao2()"><strong>Responder</strong></button><br><br>
+                <strong><span id="resultado2"></span></strong><br>
+                <span class="atualPontuacao"><strong>Pontuação Atual:</strong></span><br>  
+                <strong><span id="spanAtual2">0/12</span></strong>
+             </div>
+
+             <div class="carta3">
+                <!--Pergunta 3-->
+                <h1>Este país contém algo precioso...</h1>
+                <img height="300px" width="300px" src="./img/wakanda2.jpg" alt=""><br><br>
+ 
+                <strong>
+                   <p>Wakanda é um país distante, encontrado por meio de coordenadas dentro de uma barreira de energia. Lá, eles possuem o metal mais precioso da Terra. Qual o nome desse metal?</p>
+                </strong>
+ 
+                <input type="radio" id="Adamantium" name="quest" value="Adamantium">
+                <label for="Robin"><strong>Adamantium</strong></label>
+                <br>
+                <input type="radio" id="Vibranium" name="quest" value="Vibranium">
+                <label for="Coringa"><strong>Vibranium</strong></label>
+                <br>
+                <input type="radio" id="Platina" name="quest" value="Platina">
+                <label for="Batman"><strong>Platina</strong></label>
+                <br><br>
+                <button class="btn" onclick="questao3()"><strong>Responder</strong></button><br><br>
+                <strong><span id="resultado3"></span></strong><br>
+                <span class="atualPontuacao"><strong>Pontuação Atual:</strong></span><br>  
+                <strong><span id="spanAtual3">0/12</span></strong>
+             </div>
+
+             <div class="carta4">
+                <!--Pergunta 4-->
+                <h1>Qual o maior vilão do Superman?</h1>
+                <img height="300px" width="300px" src="./img/supercyborg.jpg" alt=""><br><br>
+                <strong>
+                   <p>O Superman possui vários vilões, mas você sabe qual é o seu vilão Nº 1?</p>
+                </strong>
+                <input type="radio" id="LexLuthor" name="quest" value="LexLuthor">
+                <label for="LexLuthor"><strong>Lex Luthor</strong></label><br>
+                <input type="radio" id="Apocalipse" name="quest" value="Apocalipse">
+                <label for="Apocalipse"><strong>Apocalipse</strong></label><br>
+                <input type="radio" id="GeneralZod" name="quest" value="GeneralZod">
+                <label for="GeneralZod"><strong>General Zod</strong></label><br><br>
+                <button class="btn" onclick="questao4()"><strong>Responder</strong></button><br><br>
+                <strong><span id="resultado4"></span></strong><br>
+                <span class="atualPontuacao"><strong>Pontuação Atual:</strong></span><br>  
+                <strong><span id="spanAtual4">0/12</span></strong>
+             </div>
+
+             <div class="carta5">
+                <!--Pergunta 5-->
+                <h1>Quem será o crush da Mulher Maravilha?</h1>
+                <img height="300px" width="300px" src="./img/maravilha.jpg" alt=""><br><br>
+                <strong>
+                   <p>Você sabe qual o personagem que a Mulher Maravilha tem uma quedinha?</p>
+                </strong>
+                <input type="radio" id="Superman" name="quest" value="Superman">
+                <label for="Superman"><strong>Superman</strong></label><br>
+                <input type="radio" id="Ninguem" name="quest" value="Ninguem">
+                <label for="Ninguem"><strong>Ela prefere não se apaixonar.</strong></label><br>
+                <input type="radio" id="Batman2" name="quest" value="Batman2">
+                <label for="Batman2"><strong>Batman</strong></label><br><br>
+                <button class="btn" onclick="questao5()"><strong>Responder</strong></button><br><br>
+                <strong><span id="resultado5"></span></strong><br>
+                <span class="atualPontuacao"><strong>Pontuação Atual:</strong></span><br>  
+                <strong><span id="spanAtual5">0/12</span></strong>
+             </div>
+
+             <div class="carta6">
+                <!--Pergunta 6-->
+                <h1>Magneto é papai, você sabia?</h1>
+                <img height="300px" width="300px" src="./img/magneto.jpg" alt=""><br><br>
+                <strong>
+                   <p>Nos quadrinhos, Magneto possui dois filhos. Mas nos filmes do MCU isso foi descartado. Quem seriam eles? </p>
+                </strong>
+                <input type="radio" id="Logan" name="quest" value="Logan">
+                <label for="Logan"><strong>Logan e Vampíra</strong></label><br>
+                <input type="radio" id="Kitty" name="quest" value="Kitty">
+                <label for="Kitty"><strong>Kitty Pride e Jean Grey</strong></label><br>
+                <input type="radio" id="Feiticeira" name="quest" value="Feiticeira">
+                <label for="Feiticeira"><strong>Feiticeira Escarlate e Mercúrio</strong></label><br><br>
+                <button class="btn" onclick="questao6()"><strong>Responder</strong></button><br><br>
+                <strong><span id="resultado6"></span></strong><br>
+                <span class="atualPontuacao"><strong>Pontuação Atual:</strong></span><br>  
+                <strong><span id="spanAtual6">0/12</span></strong>
+             </div>
+
+             <div class="carta7">
+                <!--Pergunta 7-->
+                <h1>Qual o nome completo desse personagem?</h1>
+                <img height="300px" width="300px" src="./img/zatara.jpg" alt=""><br><br>
+                <strong>
+                   <p>Este personagem é um dos maiores Magos que existe no mundo dos Quadrinhos e faz parte da Liga da Justiça. Qual o nome dele?</p>
+                </strong>
+                <input type="radio" id="Giovanni" name="quest" value="Giovanni">
+                <label for="Giovanni"><strong>Giovanni Zatara</strong></label><br>
+                <input type="radio" id="John" name="quest" value="John">
+                <label for="John"><strong>John Zatara</strong></label><br>
+                <input type="radio" id="Zachary" name="quest" value="Zachary">
+                <label for="Zachary"><strong>Zachary Zatara</strong></label><br><br>
+                <button class="btn" onclick="questao7()"><strong>Responder</strong></button><br><br>
+                <strong><span id="resultado7"></span></strong><br>
+                <span class="atualPontuacao"><strong>Pontuação Atual:</strong></span><br>  
+                <strong><span id="spanAtual7">0/12</span></strong>
+             </div>
+
+             <div class="carta8">
+                <!--Pergunta 8-->
+                <h1>Capitão América - A serviço da Nação</h1>
+                <img height="300px" width="300px" src="./img/capitao.jpeg" alt=""><br><br>
+                <strong>
+                   <p>Capitão América é conhecido como o Primeiro Vingador, dando início a famosa equipe de super heróis. Você sabe dizer qual foi a sua primeira batalha?</p>
+                </strong>
+                <input type="radio" id="guerra1" name="quest" value="guerra1">
+                <label for="guerra1"><strong>Primeira Guerra Mundial</strong></label><br>
+                <input type="radio" id="guerra2" name="quest" value="guerra2">
+                <label for="guerra2"><strong>Guerra Fria</strong></label><br>
+                <input type="radio" id="guerra3" name="quest" value="guerra3">
+                <label for="guerra3"><strong>Segunda Guerra Mundial</strong></label><br><br>
+                <button class="btn" onclick="questao8()"><strong>Responder</strong></button><br><br>
+                <strong><span id="resultado8"></span></strong><br>
+                <span class="atualPontuacao"><strong>Pontuação Atual:</strong></span><br>  
+                <strong><span id="spanAtual8">0/12</span></strong>
+             </div>
+
+             <div class="carta9">
+                <!--Pergunta 9-->
+                <h1>Quem é o mais veloz?</h1>
+                <img height="300px" width="300px" src="./img/personagens-mais-velozes_f.png" alt=""><br><br>
+                <strong>
+                   <p>Tanto na DC Comics quanto na Marvel Comics existem personagens extremamente velozes. Mas você sabe qual é o mais rápido de todos, independente da produtora?</p>
+                </strong>
+                <input type="radio" id="Familia" name="quest" value="Familia">
+                <label for="Familia"><strong>A Família Flash</strong></label><br>
+                <input type="radio" id="Wally" name="quest" value="Wally">
+                <label for="Wally"><strong>Wally West</strong></label><br>
+                <input type="radio" id="Surfista" name="quest" value="Surfista">
+                <label for="Surfista"><strong>Surfista Prateado</strong></label><br><br>
+                <button class="btn" onclick="questao9()"><strong>Responder</strong></button><br><br>
+                <strong><span id="resultado9"></span></strong><br>
+                <span class="atualPontuacao"><strong>Pontuação Atual:</strong></span><br>  
+                <strong><span id="spanAtual9">0/12</span></strong>
+             </div>
+
+             <div class="carta10">
+                <!--Pergunta 10-->
+                <h1>Hulk - O Esmagador de Mundos</h1>
+                <img height="300px" width="300px" src="./img/hulk.jpeg" alt=""><br><br>
+                <strong>
+                   <p>Hulk é um dos personagens mais fortes de toda a Marvel, mas você sabe em qual revista em quadrinho ele apareceu pela primeira vez?</p>
+                </strong>
+                <input type="radio" id="incredible" name="quest" value="incredible">
+                <label for="incredible"><strong>The Incredible Hulk #1</strong></label><br>
+                <input type="radio" id="Amazing" name="quest" value="Amazing">
+                <label for="Amazing"><strong>Amazing Fantasy #15</strong></label><br>
+                <input type="radio" id="Tales" name="quest" value="Tales">
+                <label for="Tales"><strong>Tales of Suspense #39</strong></label><br><br>
+                <button class="btn" onclick="questao10()"><strong>Responder</strong></button><br><br>
+                <strong><span id="resultado10"></span></strong><br>
+                <span class="atualPontuacao"><strong>Pontuação Atual:</strong></span><br>  
+                <strong><span id="spanAtual10">0/12</span></strong>
+             </div>
+
+             <div class="carta11">
+                <!--Pergunta 11-->
+                <h1>Somos a diversão da noite... HA HA HA HA HA!!!</h1>
+                <img height="300px" width="300px" src="./img/viloes_batman.png" alt=""><br><br>
+                <strong>
+                   <p>O Batman possui vários vilões. Você sabe qual é o seu vilão Nº 1?</p>
+                </strong>
+                <input type="radio" id="Mascara" name="quest" value="Mascara">
+                <label for="Mascara"><strong>Máscara Negra</strong></label><br>
+                <input type="radio" id="Pinguim" name="quest" value="Pinguim">
+                <label for="Pinguim"><strong>Pinguim</strong></label><br>
+                <input type="radio" id="Coringa2" name="quest" value="Coringa2">
+                <label for="Coringa2"><strong>Coringa</strong></label><br><br>
+                <button class="btn" onclick="questao11()"><strong>Responder</strong></button><br><br>
+                <strong><span id="resultado11"></span></strong><br>
+                <span class="atualPontuacao"><strong>Pontuação Atual:</strong></span><br>  
+                <strong><span id="spanAtual11">0/12</span></strong>
+             </div>
+
+             <div class="carta12">
+                <!--Pergunta 12-->
+                <h1>Loki, o Deus da mentira</h1>
+                <img height="300px" width="300px" src="./img/Loki.webp" alt=""><br><br>
+                <strong>
+                   <p>Loki é o filho adotivo de Odin e não nasceu em Asgard. Onde ele de fato nasceu?</p>
+                </strong>
+                <input type="radio" id="Midgard" name="quest" value="Midgard">
+                <label for="Midgard"><strong>Midgard</strong></label><br>
+                <input type="radio" id="Jotunheim2" name="quest" value="Jotunheim2">
+                <label for="Jotunheim2"><strong>Jotunheim</strong></label><br>
+                <input type="radio" id="Svartalfheim" name="quest" value="Svartalfheim">
+                <label for="Svartalfheim"><strong>Svartalfheim</strong></label><br><br>
+                <button class="btn" onclick="questao12()"><strong>Responder</strong></button><br><br>
+                <strong><span id="resultado12"></span></strong><br>
+                <span class="atualPontuacao"><strong>Pontuação Atual:</strong></span><br>  
+                <strong><span id="spanAtual12">0/12</span></strong>
+             </div>
+
+             <div class="botao-refresh">
+                <button id="btn-refresh" onclick="refresh()"><strong>Não obteve uma boa pontuação? Tente novamente!</strong></button>
+             </div>
+             <br>
+
+    </section>
+
+    <footer>
+        <table class="table" id="ranking">
+            <thead>
+               <tr>
+                  <th scope="col">Nº</th>
+                  <th scope="col">Nickname</th>
+                  <th scope="col">Recorde</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <th scope="row">1°</th>
+                  <td id="nick_1">Sem recorde</td>
+                  <td id="points_1">Sem recorde</td>
+               </tr>
+               <tr>
+                  <th scope="row">2°</th>
+                  <td id="nick_2">Sem recorde</td>
+                  <td id="points_2">Sem recorde</td>
+               </tr>
+               <tr>
+                  <th scope="row">3°</th>
+                  <td id="nick_3">Sem recorde</td>
+                  <td id="points_3">Sem recorde</td>
+               </tr>
+            </tbody>
+         </table>
+           <br>
+            <button id="gravarRecorde" onclick="gravarPontuacao()"><strong>Gravar Recorde Atual</strong></button>
+    </footer>
+    
+    
+    <script src="./JS/quiz.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    
+</body>
+</html>
